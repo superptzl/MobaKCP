@@ -200,7 +200,6 @@ public class Kcp implements Runnable{
 		//设置当前窗口大小
 		recvWnd = IKCP_SEND_WND - rcvBuf.size();
 		if (recvWnd == 0){
-//			recvWnd = 1;
 			logs.error("[RECV_IS_FULL]");
 		}
 	}
